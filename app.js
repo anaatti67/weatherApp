@@ -13,7 +13,8 @@ window.addEventListener('load', function () {
 
   function weather (lat, lon) {
     console.log(lat, lon)
-    const apiKey = '3247d71bef42350b7631010b74b2013f'
+    // You can get your own api key at the https://openweathermap.org/
+    const apiKey = ''
     // fetches the weather with the latitude and longitude coordinates
     fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + apiKey)
       .then(function (response) {
